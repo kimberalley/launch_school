@@ -1,0 +1,18 @@
+let arr = [
+  ["hello", "world"],
+  ["example", "mem", null, 6, 88],
+  [4, 8, 12]
+];
+
+function searchAndReplace(array, target, replacement) {
+  array.forEach((item, index) => {
+    if (Array.isArray(item)) {
+      searchAndReplace(item, target, replacement)
+    } else if (item === target) {
+      array[index] = replacement;
+    }
+  });
+};
+
+searchAndReplace(arr, 6, 606);
+console.log(arr);

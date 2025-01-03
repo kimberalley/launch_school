@@ -1,0 +1,9 @@
+let arr = ['a', 'abcd', 'abcde', 'abc', 'ab'];
+
+const oddLengths = (i) => {
+  let length = arr.map((i) => i.length);
+  let odd = length.filter((j) => j % 2 === 1);
+  return odd;
+};
+
+console.log(oddLengths());

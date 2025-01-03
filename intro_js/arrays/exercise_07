@@ -1,0 +1,7 @@
+let array = [3, 5, 7];
+
+const sumOfSquares = array.reduce((sum, num) => {
+  return sum + num * num;
+}, 0); 
+
+console.log(sumOfSquares);

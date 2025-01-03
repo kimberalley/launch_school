@@ -1,0 +1,18 @@
+let arr = ['a', 'abcd', 'abcde', 'abc', 'ab'];
+
+const reducer = arr.reduce((array, i) => {
+  let length = i.length;
+  if (length % 2 === 1) {
+    array.push(length)
+  }
+  return array;
+}, []);
+
+console.log(reducer);
+
+
+
+
+/* First we want to find the lengths of all the elements in an array
+   Second we want to identify the lengths as even or odd
+   Third we want to discard all the even values */

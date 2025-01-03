@@ -1,0 +1,24 @@
+let objToCopy = {
+  foo: 1,
+  bar: 2,
+  qux: 3,
+  lux: 4,
+  pax: 5,
+};
+
+
+function copyObj(oldObj, keys) {
+  let newObj = [];
+
+  if (keys) {
+    keys.forEach((key) => {
+      newObj[key] = oldObj[key];
+    });
+    return console.log(newObj);
+  } else {
+    Object.assign(oldObj, newObj);
+    return console.log(oldObj);
+  }
+};
+
+copyObj(objToCopy);

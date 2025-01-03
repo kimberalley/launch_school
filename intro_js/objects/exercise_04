@@ -1,0 +1,13 @@
+let obj = {
+  b: 2,
+  a: 1, 
+  c: 3,
+};
+
+const toArray = object => {
+  let objKeys = Object.keys(object)
+  let upperKeys = objKeys.map((key) => key.toUpperCase());
+  console.log(upperKeys);
+};
+
+toArray(obj);

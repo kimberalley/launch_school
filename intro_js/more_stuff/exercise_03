@@ -1,0 +1,5 @@
+function squareRoot(x) {
+  console.log(Math.sqrt(x))
+};
+
+squareRoot(37);
